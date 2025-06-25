@@ -178,15 +178,21 @@
     <p><strong>Phone:</strong> <a href="tel:+917021963255" style="color:red;">7021963255</a></p>
     <p><strong>Email:</strong> jigarchitalia007@gmail.com</p>
 
-    <form name="contact" netlify>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-</section>
-
+<form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
 <footer>
   &copy; 2025 SJ Info Service. All rights reserved.
 </footer>
